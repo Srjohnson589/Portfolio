@@ -9,14 +9,17 @@
 
 body {
     text-align: center;
+    background: #e8ecfc7b;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .portfolio {
     margin-top: 2rem;
+    font-size: 2.5rem;
 }
 
 .myname {
@@ -35,20 +38,25 @@ a {
 }
 
 .project {
+    margin: 1rem;
     padding: 2rem;
-    max-width: 252px;
+    background-color: #f0f2fdb7;
+    border-radius: 8px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 360px;
+    height: 340px;
+    border: 1px solid rgba(196, 195, 195, 0.377);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .project-img {
     width: 100%;
-    height: 180px;
+    height: 140px;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid rgb(81, 81, 81);
+    border: 1px solid rgba(81, 81, 81, 0.77);
 }
 
 .project-title {
@@ -92,17 +100,50 @@ a {
     font-weight: 300;
 }
 
-.visit-icon {
+.visit-icon, .github-icon {
     padding: 3px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .github-icon {
-    padding: 3px;
+    font-size: 1rem;
 }
 
-.visit-icon:hover, .github-icon:hover {
-    color: rgb(64, 64, 64);
-    background-color: rgb(244, 250, 255);
-    border-radius: 50%;
-}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -150%;
+    left: 50%;
+    margin-left: -40px;
+  }
+
+  .tooltiptext {
+    font-size: 0.8rem;
+  }
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
