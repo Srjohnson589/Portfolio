@@ -17,8 +17,31 @@ a {
     color: black;
 }
 
+header {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 25px;
+    margin-right: 35px;
+}
+
+.linkedin-icon, .env-icon{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.resume-btn {
+    display: inline;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
 .portfolio {
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-size: 2.5rem;
 }
 
@@ -147,3 +170,46 @@ a {
 .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+.footer {
+    border-top:1px solid rgb(96, 95, 95);
+    height: 28vh;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 90%;
+
+}
+
+.footer-btn {
+    position: relative;
+    top: 40%;
+    padding: 7px 22px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    margin: 0 30px;
+    background-color: rgba(32, 32, 36, 0.8);
+    color: white;
+}
+
+.footer-btn:hover {
+    background-color: rgba(10, 10, 12, 0.84);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.footer p {
+    color: black;
+    font-size: 0.7rem;
+    position: relative;
+    top: 75%;
+}
+
+.footer-repo {
+    font-weight: 500;
+    color: black;
+
+}
+
+.footer-repo:hover {
+    text-decoration: underline;
+}
