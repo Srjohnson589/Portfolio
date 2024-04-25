@@ -9,7 +9,7 @@
 
 body {
     text-align: center;
-    background: #e8ecfc7b;
+    background: #e8ecfc;
 }
 
 a {
@@ -27,29 +27,38 @@ header {
 }
 
 .linkedin-icon, .env-icon{
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 10px;
+}
+
+.linkedin-icon:hover, .env-icon:hover {
+    color: blue;
 }
 
 .resume-btn {
     display: inline;
-    padding: 5px 15px;
-    border: 1px solid black;
+    padding: 10px 20px;
+    border: 2px solid rgb(63, 63, 63);
     border-radius: 25px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-left: 15px;
+}
+
+.resume-btn:hover {
+    color: white;
+    background-color: black;
 }
 
 .portfolio {
     margin-top: 4rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .myname {
     margin-top: .5rem;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .list-container {
@@ -63,20 +72,19 @@ header {
 .project {
     margin: 1rem;
     padding: 2rem;
-    background-color: #f0f2fdb7;
+    background-color: #ffffffb7;
     border-radius: 8px;
-    max-width: 200px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 340px;
-    border: 1px solid rgba(196, 195, 195, 0.377);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 450px;
+    border: 1px solid rgba(196, 195, 195, 0.925);
 }
 
 .project-img {
     width: 100%;
-    height: 140px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid rgba(81, 81, 81, 0.77);
@@ -84,8 +92,8 @@ header {
 
 .project-title {
     font-weight: 400;
-    font-size: 1rem;
-    margin: 1rem 0;
+    font-size: 1.3rem;
+    margin-top: .5rem;
 }
 
 .stack {
@@ -97,39 +105,39 @@ header {
 
 .stack div{
     margin: 0 10px;
-    width: 40px;
-    height: 60px;
+    width: 60px;
+    height: 80px;
 }
 
 .stack li img{
-    height: 1.8rem;
+    height: 2rem;
 }
 
 .stack li i{
     padding: 5px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .stack li p {
     margin-top: 4px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-align: center;
 }
 
 .project-description {
     margin-bottom: 1rem;
-    font-size: 0.7rem;
+    font-size: .9rem;
     font-weight: 300;
 }
 
 .visit-icon, .github-icon {
     padding: 3px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .github-icon {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .tooltip {
@@ -139,21 +147,21 @@ header {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 80px;
     background-color: black;
+    width: 100px;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: -150%;
+    bottom: -200%;
     left: 50%;
-    margin-left: -40px;
+    margin-left:-50px;
   }
 
   .tooltiptext {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
 .tooltip .tooltiptext::after {
@@ -172,34 +180,33 @@ header {
   }
 
 .footer {
-    border-top:1px solid rgb(96, 95, 95);
+    border-top:2px solid rgb(96, 95, 95);
     height: 28vh;
     margin: 0 auto;
     margin-top: 100px;
     width: 90%;
-
 }
 
 .footer-btn {
     position: relative;
     top: 40%;
-    padding: 7px 22px;
-    font-size: 0.9rem;
+    padding: 10px 30px;
+    font-size: 1.1rem;
     border-radius: 25px;
     margin: 0 30px;
-    background-color: rgba(32, 32, 36, 0.8);
+    background-color: rgba(24, 24, 29, 0.979);
     color: white;
 }
 
 .footer-btn:hover {
-    background-color: rgba(10, 10, 12, 0.84);
+    background-color: rgba(19, 19, 172, 0.84);
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 2px 3px;
 }
 
 .footer p {
     color: black;
-    font-size: 0.7rem;
+    font-size: 1rem;
     position: relative;
     top: 75%;
 }
@@ -213,3 +220,54 @@ header {
 .footer-repo:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    header {
+        text-align: center;
+    }
+    
+    .linkedin-icon, .env-icon{
+        font-size: 1rem;
+    }
+
+    .resume-btn {
+        padding: 5px 10px;
+        font-size: 1rem;
+        border: 1px solid rgb(31, 31, 34);
+    }
+
+    .portfolio {
+        margin-top: 6rem;
+        font-size: 2rem;
+    }
+
+    .myname {
+        font-size: 1.1rem;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+        margin-top: .2rem;
+    }
+
+    .project {
+        height: 420px;
+    }
+
+    .footer {
+        height: 20vh;
+    }
+
+    .footer-btn {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .footer p {
+        padding-bottom: 20px;
+    }
+
+  }
